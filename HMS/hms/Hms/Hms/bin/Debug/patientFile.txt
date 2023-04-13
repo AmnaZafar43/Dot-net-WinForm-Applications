@@ -1,0 +1,3 @@
+aymee,19,female,O+,migraine,5656,3545678909876,islamabad
+sadaf,32,female,B+,typhoid,7878,0987654321234,lahore
+ali,25,male,AB+,headache,3232,0987654345678,lahore

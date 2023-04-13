@@ -1,0 +1,9 @@
+amna,321,admin
+fatima,787,user
+amad,112,admin
+sadaf,4545,user
+amna,321,admin
+fatima,787,user
+amad,112,admin
+sadaf,4545,user
+ali,999,user

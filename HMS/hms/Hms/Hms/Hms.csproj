@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1689C52F-8D8E-45F2-8293-FB649FFDBCB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hms</RootNamespace>
+    <AssemblyName>Hms</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDoctor.Designer.cs">
+      <DependentUpon>addDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addPatient.Designer.cs">
+      <DependentUpon>addPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="appointment.Designer.cs">
+      <DependentUpon>appointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\doctor.cs" />
+    <Compile Include="BL\patient.cs" />
+    <Compile Include="CBC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CBC.Designer.cs">
+      <DependentUpon>CBC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cultures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cultures.Designer.cs">
+      <DependentUpon>cultures.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deleteDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deleteDoctor.Designer.cs">
+      <DependentUpon>deleteDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletePatient.Designer.cs">
+      <DependentUpon>deletePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DL\doctorDL.cs" />
+    <Compile Include="DL\patientDL.cs" />
+    <Compile Include="Doctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor.Designer.cs">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lapid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lapid.Designer.cs">
+      <DependentUpon>lapid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainPage.Designer.cs">
+      <DependentUpon>mainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="metabollic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="metabollic.Designer.cs">
+      <DependentUpon>metabollic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient.Designer.cs">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prescription.Designer.cs">
+      <DependentUpon>prescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="prothomTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prothomTest.Designer.cs">
+      <DependentUpon>prothomTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="signIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signIn.Designer.cs">
+      <DependentUpon>signIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="subMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="subMainPage.Designer.cs">
+      <DependentUpon>subMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="testDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="testDetail.Designer.cs">
+      <DependentUpon>testDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateDoctor.Designer.cs">
+      <DependentUpon>updateDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatePatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatePatient.Designer.cs">
+      <DependentUpon>updatePatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewAppointment.Designer.cs">
+      <DependentUpon>viewAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewDoctor.Designer.cs">
+      <DependentUpon>viewDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewInstructions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewInstructions.Designer.cs">
+      <DependentUpon>viewInstructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewPatient.Designer.cs">
+      <DependentUpon>viewPatient.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addDoctor.resx">
+      <DependentUpon>addDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addPatient.resx">
+      <DependentUpon>addPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="appointment.resx">
+      <DependentUpon>appointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CBC.resx">
+      <DependentUpon>CBC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cultures.resx">
+      <DependentUpon>cultures.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deleteDoctor.resx">
+      <DependentUpon>deleteDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletePatient.resx">
+      <DependentUpon>deletePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor.resx">
+      <DependentUpon>Doctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lapid.resx">
+      <DependentUpon>lapid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainPage.resx">
+      <DependentUpon>mainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="metabollic.resx">
+      <DependentUpon>metabollic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient.resx">
+      <DependentUpon>Patient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prescription.resx">
+      <DependentUpon>prescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="prothomTest.resx">
+      <DependentUpon>prothomTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signIn.resx">
+      <DependentUpon>signIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="subMainPage.resx">
+      <DependentUpon>subMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="testDetail.resx">
+      <DependentUpon>testDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateDoctor.resx">
+      <DependentUpon>updateDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatePatient.resx">
+      <DependentUpon>updatePatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewAppointment.resx">
+      <DependentUpon>viewAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewDoctor.resx">
+      <DependentUpon>viewDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewInstructions.resx">
+      <DependentUpon>viewInstructions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewPatient.resx">
+      <DependentUpon>viewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p41.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p111.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p132.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img1 %282%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1 %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p42.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a8.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a81.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a82.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a14.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p83.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a15.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a21.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a13.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a121.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a122.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a124.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a125.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a16.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a17.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a171.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a6.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

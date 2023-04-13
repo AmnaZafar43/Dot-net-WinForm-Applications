@@ -1,0 +1,11 @@
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\bin\Debug\task.exe.config
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\bin\Debug\task.exe
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\bin\Debug\task.pdb
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.csproj.AssemblyReference.cache
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.csproj.SuggestedBindingRedirects.cache
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.Form1.resources
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.Properties.Resources.resources
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.csproj.GenerateResource.cache
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.csproj.CoreCompileInputs.cache
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.exe
+E:\OOP\DESKTOP\Dynamic_Controls\task\task\obj\Debug\task.pdb
